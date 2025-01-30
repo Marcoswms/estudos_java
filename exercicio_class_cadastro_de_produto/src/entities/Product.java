@@ -5,6 +5,23 @@ public class Product {
     public double price;
     public int quantity;
 
+    /*Product: Este será o construtor, para que o objeto seja instanciado já recebendo valores
+     em seus atributos.
+     O construtor deverá ficar logo após os atributos declarados. */
+    public Product(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    /*Sobrecarga: Este segundo construtor é uma sobrecarga, trata-se do mesmo construtor porém sem
+     o parâmetro 'quantity', para que ele receba um valor padrão = 0 ou seja, um construtor com o
+     mesmo nome porém com listas de parâmetros diferentes uns dos outros*/
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
     public double totalValuenStock() {
         return price * quantity;
     }
@@ -20,7 +37,7 @@ public class Product {
     }
 
     /*toString: É um método já pertencente a classe 'Object' e por padrão, a classe 'Product' será pertencente
-    a classe 'Object'. Neste caso estamos 'sobrescrevendo' este método para que tenha o comportamento que
+     a classe 'Object'. Neste caso estamos 'sobrescrevendo' este método para que tenha o comportamento que
      melhor nos atente neste exemplo. */
     public String toString() {
         return name

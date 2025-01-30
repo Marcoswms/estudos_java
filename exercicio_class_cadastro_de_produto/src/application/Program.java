@@ -11,14 +11,18 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
 
-        Product product = new Product();
         System.out.println("Enter product data: ");
         System.out.println("Name: ");
-        product.name = scan.nextLine();//Armazenará dentro do objeto 'product', no atributo 'name'.
+        String name = scan.nextLine();/*Variável local: Serve para armazenar um dado temporariamente e transmitir
+        seu dado a um parâmetro. Neste caso, 'name', 'price' e 'quantity' são variáveis locais*/
         System.out.println("Price: ");
-        product.price = scan.nextDouble();
-        System.out.println("Quantity in stock: ");
-        product.quantity = scan.nextInt();
+        double price = scan.nextDouble();
+
+
+        /*Após o 'new' será chamado o construtor 'Product' e adicionado as variáveis temporárias, para que
+        os parâmetros do construtor receba estes valores e eles encaminhandos para os atributos do objeto instanciado
+        PS: É uma boa prática instanciar o objeto desta forma para não correr o risco de instanciar com valores nulos. */
+        Product product = new Product(name, price);
 
         System.out.println();
         System.out.println("Product data: " + product.toString());

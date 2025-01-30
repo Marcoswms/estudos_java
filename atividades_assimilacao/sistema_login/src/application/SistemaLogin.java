@@ -28,7 +28,6 @@ public class SistemaLogin {
 
         conta.validaDados(entradaUsuario, entradaSenha);
         System.out.println(conta);
-        System.out.println("Nome de usuário: " + conta.getUsuario() + " -- Senha: " + conta.getSenha());
 
         scan.close();
     }

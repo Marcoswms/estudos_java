@@ -1,9 +1,9 @@
 package entities;
 
 public class Conta {
-    protected String usuario;
-    protected String senha;
-    public String mensagem;
+    private String usuario;
+    private String senha;
+    protected String mensagem;
 
     public void setUsuario(String usuario) {
         this.usuario = usuario;
@@ -22,7 +22,7 @@ public class Conta {
     }
 
     public String validaDados(String usuario, String senha) {
-        if (usuario != getUsuario() && senha != getSenha()) {
+        if (usuario != this.usuario && senha != this.senha) {
             return mensagem = "Usuário ou senha incorretos!!";
 
         } else return mensagem = "Logado com sucesso!!";
