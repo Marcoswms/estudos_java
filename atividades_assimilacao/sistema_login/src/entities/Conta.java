@@ -21,13 +21,13 @@ public class Conta {
         return senha;
     }
 
-    public String validaDados(String usuario, String senha) {
-        if (usuario != this.usuario && senha != this.senha) {
-            return mensagem = "Usuário ou senha incorretos!!";
-
-        } else return mensagem = "Logado com sucesso!!";
+    public void validaDados(String usuario, String senha) {
+        if (usuario.equals(this.usuario) && senha.equals(this.senha)) {
+            mensagem = "Logado com sucesso!!";
+        } else mensagem = "Usuário ou senha incorretos!!";
     }
 
+    @Override //Identifica quando trata-se de uma sobrescrita (Método  herdado da classe Pai, neste caso 'Object')
     public String toString() {
         return mensagem;
     }
