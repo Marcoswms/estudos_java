@@ -24,6 +24,11 @@ public class Program {
         PS: É uma boa prática instanciar o objeto desta forma para não correr o risco de instanciar com valores nulos. */
         Product product = new Product(name, price);
 
+        product.setName("Computer");
+        System.out.println("Update name: " + product.getName());
+        product.setPrice(1200.00);
+        System.out.println("Update name: " + product.getPrice());
+
         System.out.println();
         System.out.println("Product data: " + product.toString());
         /*Chamar o toString neste caso será opcional, o java entenderá
