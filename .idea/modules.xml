@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Exercicios_Java.iml" filepath="$PROJECT_DIR$/.idea/Exercicios_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atividades_assimilacao/atividades_assimilacao.iml" filepath="$PROJECT_DIR$/atividades_assimilacao/atividades_assimilacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estruturaCondicional/estruturaCondicional.iml" filepath="$PROJECT_DIR$/estruturaCondicional/estruturaCondicional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estruturaRepeticao/estruturaRepeticao.iml" filepath="$PROJECT_DIR$/estruturaRepeticao/estruturaRepeticao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exemplo_classes_e_metodos/exemplo_classes_e_metodos.iml" filepath="$PROJECT_DIR$/exemplo_classes_e_metodos/exemplo_classes_e_metodos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio_class_cadastro_de_produto/exercicio_class_cadastro_de_produto.iml" filepath="$PROJECT_DIR$/exercicio_class_cadastro_de_produto/exercicio_class_cadastro_de_produto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vetorEMatrix/vetorEMatrix.iml" filepath="$PROJECT_DIR$/vetorEMatrix/vetorEMatrix.iml" />
+    </modules>
+  </component>
+</project>
