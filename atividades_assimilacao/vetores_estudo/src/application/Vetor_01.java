@@ -14,7 +14,7 @@ public class Vetor_01 {
 
         //'Index' para acessar cada posição do vetor atravéz do for.
         for (int index = 0; index < tamanhoVetor; index++) {
-            System.out.printf("\nDigite o valor da posição ", (index + 1));
+            System.out.printf("Digite o valor da " + (index + 1) + "ª posição: ");
             vetor[index] = scan.nextDouble();
         }
         double soma = 0.0;
