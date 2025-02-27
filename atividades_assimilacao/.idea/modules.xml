@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/atividades_assimilacao.iml" filepath="$PROJECT_DIR$/.idea/atividades_assimilacao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conta_bancaria/conta_bancaria.iml" filepath="$PROJECT_DIR$/conta_bancaria/conta_bancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sistema_login/sistema_login.iml" filepath="$PROJECT_DIR$/sistema_login/sistema_login.iml" />
+    </modules>
+  </component>
+</project>
