@@ -5,19 +5,17 @@ public class Funcionarios {
     private String nome;
     private Double salario;
 
-    public Funcionarios(int id, String nome, double salario) {
+    public Funcionarios() {
+
+    }
+
+    public Funcionarios(Integer id, String nome, Double salario) {
         this.id = id;
         this.nome = nome;
         this.salario = salario;
     }
 
-    public Funcionarios(int id, double salario) {
-        this.id = id;
-        this.nome = getNome();
-        aumentoSalarial(id, salario);
-    }
-
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -25,7 +23,7 @@ public class Funcionarios {
         return nome;
     }
 
-    public double getSalario() {
+    public Double getSalario() {
         return salario;
     }
 
@@ -41,11 +39,10 @@ public class Funcionarios {
         this.salario = salario;
     }
 
-    public void aumentoSalarial(int id, double porcentagem) {
-        if (id == this.id) {
-            this.salario *= porcentagem;
-        }
+    public void aumentoSalarial(Double porcentagem) {
+        salario += salario * porcentagem / 100.0;
     }
+
     @Override
     public String toString() {
         return id + ", " + nome + ", " + String.format("%.2f", salario);
