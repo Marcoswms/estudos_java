@@ -28,6 +28,10 @@ public class Main {
             System.out.printf("Informe o ID:\n");
             int id = scan.nextInt();
 
+            while (idSeRepetido(armazenaCadastro, id) == true) {
+                System.out.println("Este ID já consta cadastrado, insira outro ID: ");
+                id = scan.nextInt();
+            }
             System.out.printf("Informe o Nome:\n");
             scan.nextLine();
             String nome = scan.nextLine();
@@ -41,7 +45,7 @@ public class Main {
         System.out.println("Informe o ID do funcionário que terá aumento salarial: ");
         int id = scan.nextInt();
         scan.nextLine();
-        Integer posicaoId = comparaId(armazenaCadastro, id);
+        Integer posicaoId = idSeNulo(armazenaCadastro, id);
 
         if (posicaoId == null) {
             System.out.println("Este ID não existe!");
@@ -59,12 +63,21 @@ public class Main {
     }
 
     //WrapperClass 'Integer' para retornar valor 'null' caso não localizar o 'ID'.
-    public static Integer comparaId(Funcionarios[] armazenaCadastro, int id) {
+    public static Integer idSeNulo(Funcionarios[] armazenaCadastro, int id) {
         for (int index = 0; index < armazenaCadastro.length; index++) {
-            if (armazenaCadastro[index].getId() == id) {
+            if (armazenaCadastro[index].getId().equals(id)) {
                 return index;
             }
         }
         return null;
+    }
+
+    public static Boolean idSeRepetido(Funcionarios[] armazenaCadastro, Integer id) {
+        for (Funcionarios comparaId : armazenaCadastro) {
+            if (comparaId != null && comparaId.getId().equals(id)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
