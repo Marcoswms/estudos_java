@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc90fb8-c67a-43da-88ca-5a639a205486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/enumeracao_composicao/exemploComposicaoDeObjeto/exemploComposicaoDeObjeto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/enumeracao_composicao/applicatoin/Programa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enumeracao_composicao/applicatoin/Programa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enumeracao_composicao/exemploComposicaoDeObjeto/src/application/ProgramMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/enumeracao_composicao/exemploComposicaoDeObjeto/src/application/ProgramMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exemploComposicaoDeObjeto/application/ProgramMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exemploComposicaoDeObjeto/application/ProgramMain.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -29,6 +31,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2soqFcl82UkRACSMZIQKczAYslT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,21 +42,55 @@
   "keyToString": {
     "Application.Becrowd1035.executor": "Debug",
     "Application.Beecrowd1020.executor": "Run",
+    "Application.FibonacciF1151.executor": "Run",
+    "Application.MainTest.executor": "Run",
     "Application.ProgramMain.executor": "Run",
     "Application.Programa.executor": "Run",
+    "Application.SumarioProgram.executor": "Debug",
     "Application.becrowdIfElse1049.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Marcos/Documents/IntelliJ_Projetos/Exercicios_Java",
-    "onboarding.tips.debug.path": "C:/Users/Marcos/Documents/IntelliJ_Projetos/Exercicios_Java/enumeracao_composicao/exemploComposicaoDeObjeto/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/Marcos/Documents/IntelliJ_Projetos/Exercicios_Java/atividades_assimilacao/enumeracaoComposicao/src/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ProgramMain">
-    <configuration name="Beecrowd1020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Beecrowd1020" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="entities" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="application" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FibonacciF1151">
+    <configuration name="FibonacciF1151" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FibonacciF1151" />
       <module name="atividadesBeecrowd" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.MainTest" />
+      <module name="enumeracaoComposicao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,19 +121,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="becrowdIfElse1049" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="becrowdIfElse1049" />
-      <module name="estruturaCondicional" />
+    <configuration name="SumarioProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.SumarioProgram" />
+      <module name="enumeracaoComposicao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FibonacciF1151" />
+        <item itemvalue="Application.SumarioProgram" />
+        <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.ProgramMain" />
         <item itemvalue="Application.Programa" />
-        <item itemvalue="Application.Beecrowd1020" />
-        <item itemvalue="Application.becrowdIfElse1049" />
       </list>
     </recent_temporary>
   </component>
@@ -108,5 +154,16 @@
       <updated>1739132172497</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/atividadesBeecrowd/src/FibonacciF1151.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

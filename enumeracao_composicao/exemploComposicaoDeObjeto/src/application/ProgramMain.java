@@ -49,6 +49,5 @@ public class ProgramMain {
             System.out.println(o);
         }
     // Ps: Caso os dados for inseridos direto no código, criar os objetos 'postN°' e 'commentN°' manualmente, sem loop.
-
     }
 }
