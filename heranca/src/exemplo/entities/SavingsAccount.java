@@ -23,4 +23,10 @@ public class SavingsAccount extends Account{
     public void updateBalance(){
         balance += balance * interestRate;
     }
+
+    //@Override é uma forma de Sobrescrita com a finalidade de alterar o comportamento de um método já existente.
+    @Override
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
 }

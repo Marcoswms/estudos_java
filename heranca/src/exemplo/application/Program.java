@@ -43,5 +43,20 @@ public class Program {
             acc5.updateBalance();
             System.out.println("Update!");
         }
+
+        //Testando o comportamento do método SEM @Override:
+        Account acc6 = new Account(1001, "Marcos", 1000.0);
+        acc6.withdraw(200.0);
+        System.out.println("Withdraw com a taxa de 5.0: " + acc6.getBalance());
+
+        //Testando o comportamento do método COM @Override:
+        Account acc7 = new SavingsAccount(1002, "Angela", 1000.0, 0.01);
+        acc7.withdraw(200.0);
+        System.out.println("Withdraw sem a taxa de 5.0: " + acc7.getBalance());
+
+        //Testando o comportamentodo método COM @Override e usando o 'super' para adicionar a regra da SuperClasse.
+        Account acc8 = new BusinessAccount(1003, "Mario", 1000.0, 500.0);
+        acc8.withdraw(200.0);
+        System.out.println("Withdraw com a taxa de 5.0 + taxa de 2.0: " + acc8.getBalance());
     }
 }
