@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4dc90fb8-c67a-43da-88ca-5a639a205486" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heranca/src/exemplo/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/heranca/src/exemplo/application/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +41,10 @@
     "Application.Becrowd1035.executor": "Debug",
     "Application.Beecrowd1020.executor": "Run",
     "Application.FibonacciF1151.executor": "Run",
-    "Application.Lanche1038.executor": "Run",
+    "Application.Lanche1038.executor": "Debug",
     "Application.Main.executor": "Run",
     "Application.MainTest.executor": "Run",
+    "Application.Program.executor": "Debug",
     "Application.ProgramMain.executor": "Run",
     "Application.Programa.executor": "Run",
     "Application.SumarioProgram.executor": "Debug",
@@ -73,7 +75,7 @@
       <recent name="application" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lanche1038">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="FibonacciF1151" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FibonacciF1151" />
       <module name="atividadesBeecrowd" />
@@ -95,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="application.MainTest" />
-      <module name="enumeracaoComposicao" />
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exemplo.application.Program" />
+      <module name="heranca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="application.*" />
+          <option name="PATTERN" value="exemplo.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program" />
         <item itemvalue="Application.Lanche1038" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.FibonacciF1151" />
         <item itemvalue="Application.SumarioProgram" />
-        <item itemvalue="Application.MainTest" />
       </list>
     </recent_temporary>
   </component>
@@ -149,6 +151,11 @@
           <url>file://$PROJECT_DIR$/atividadesBeecrowd/src/FibonacciF1151.java</url>
           <line>6</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/heranca/src/exemplo/application/Program.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
