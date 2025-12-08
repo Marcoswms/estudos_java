@@ -58,5 +58,18 @@ public class Program {
         Account acc8 = new BusinessAccount(1003, "Mario", 1000.0, 500.0);
         acc8.withdraw(200.0);
         System.out.println("Withdraw com a taxa de 5.0 + taxa de 2.0: " + acc8.getBalance());
+
+        /*Polomorfismo: São variáveis do MESMO TIPO que apontam para objetos diferentes, com padrões de comportamentos
+          diferentes. Ex:
+
+          TipoDeVar nomeDaVar = new Objeto01 (comportamento01)
+          TipoDeVar nomeDaVar = new Objeto02 (comportamento01 e comportamento02)
+         */
+        Account x = new Account(1020, "José", 1000.0);
+        Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+        System.out.println(x.getBalance() + ", e " + y.getBalance());
+
     }
 }
