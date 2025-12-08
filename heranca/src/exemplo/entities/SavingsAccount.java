@@ -1,6 +1,7 @@
 package exemplo.entities;
 
-public class SavingsAccount extends Account{
+//final: Evita que a classe seja 'Herdada' por outra classe, ou um método seja 'Sobrescrito'.
+public final class SavingsAccount extends Account{
     private Double interestRate;
 
     public SavingsAccount(){
@@ -26,7 +27,7 @@ public class SavingsAccount extends Account{
 
     //@Override é uma forma de Sobrescrita com a finalidade de alterar o comportamento de um método já existente.
     @Override
-    public void withdraw(double amount) {
+    public final void withdraw(double amount) {
         balance -= amount;
     }
 }
