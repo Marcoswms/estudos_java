@@ -47,4 +47,15 @@ public  abstract class Account {
     public void deposit(double amount) {
         balance += amount;
     }
+
+    /*Um método 'abstract' só poderá ser criado dentro de uma Classe 'abstract', ou seja, uma classe que sirva como
+    modelo para se criar Subclasses derivadas.
+
+    . Métodos abstratos: quando o método é 'derivado demais' para se implementar algo dentro dele, Ex:
+
+    . Calcular a área de um objeto: há varias formas de se calcular, mas dependerá do tipo de objeto, pois há alteração
+    na formula (Area de retangulo: Largura * Altura / Área de um circulo: Raio * Raio)
+
+    . Nessa situação, criamos na Superclasse genérica um método vazio abstrato 'area()' e as Subclasses usam de
+    @Override para sobrescrever esses métodos e implementar sua lógica dentro deles. */
 }
