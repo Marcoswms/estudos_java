@@ -1,6 +1,11 @@
 package exemplo.entities;
 
-public class Account {
+/* Abstract: Usado para garantir que a SuperClasse NÃO seja Instanciada, somente seus derivados poderão ser instancados.
+ * Outro motivo de criarmos uma classe abstrata é o reuso de código e Polimorfismo: permitir outros comportamentos
+   para Subclasses, colocar todos os tipos de contas (como nesta atividade) em uma mesma coleção de lista.
+
+ */
+public  abstract class Account {
     private Integer number;
     private String holder;
     protected Double balance;

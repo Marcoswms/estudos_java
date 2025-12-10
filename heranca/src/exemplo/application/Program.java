@@ -4,14 +4,17 @@ import exemplo.entities.Account;
 import exemplo.entities.BusinessAccount;
 import exemplo.entities.SavingsAccount;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Program {
     public static void main(String[] args) {
         /*Como 'BusinessAccount' herda os comportamentos de 'Account', posso criar um objeto do
           tipo 'BusinessAccount' e ele terá todos os adicionais desta classe, incluindo os comportamentos herdados.
           EX: BusinessAccount account = new BusinessAccount();
-        */
 
-        Account acc = new Account(1001, "Alex", 0.0);
+          Account acc = new Account(1001, "Alex", 0.0);
+        */
         BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
 
         //UPCASTING - É um Objeto de Subclasse que pode ser atribuido para uma variável de Superclasse da qual deriva.
@@ -44,11 +47,6 @@ public class Program {
             System.out.println("Update!");
         }
 
-        //Testando o comportamento do método SEM @Override:
-        Account acc6 = new Account(1001, "Marcos", 1000.0);
-        acc6.withdraw(200.0);
-        System.out.println("Withdraw com a taxa de 5.0: " + acc6.getBalance());
-
         //Testando o comportamento do método COM @Override:
         Account acc7 = new SavingsAccount(1002, "Angela", 1000.0, 0.01);
         acc7.withdraw(200.0);
@@ -65,11 +63,25 @@ public class Program {
           TipoDeVar nomeDaVar = new Objeto01 (comportamento01)
           TipoDeVar nomeDaVar = new Objeto02 (comportamento01 e comportamento02)
          */
-        Account x = new Account(1020, "José", 1000.0);
-        Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
-        x.withdraw(50.0);
-        y.withdraw(50.0);
-        System.out.println(x.getBalance() + ", e " + y.getBalance());
 
+        Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+
+        y.withdraw(50.0);
+        System.out.println(y.getBalance());
+        System.out.println();
+
+        //Criando uma lista para guardar os objetos que derivam do mesmo tipo da lista: Account
+        //Logo, 'Account' é a Classe Genérica que todos estes objetos derivam.
+        List<Account> listaAbs = new ArrayList<>();
+        listaAbs.add(new SavingsAccount(1001, "Alex", 500.00, 0.01));
+        listaAbs.add(new BusinessAccount(1002, "Maria", 1000.00, 400.0));
+        listaAbs.add(new SavingsAccount(1004, "Bob", 300.0, 0.01));
+        listaAbs.add(new SavingsAccount(1005, "Ana", 500.0, 500.0));
+
+        double soma = 0.0;
+        for (Account ac : listaAbs) {
+            soma += ac.getBalance();
+        }
+        System.out.printf("Total Balance: %.2f\n", soma);
     }
 }
