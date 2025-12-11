@@ -49,10 +49,13 @@ public class Main {
                 listaDePessoa.add(new PessoaJuridica(nome, rendaAnual, quantidadeFuncionarios));
             }
         }
-        double totalImposto = 0.0;
+        //Separado as ações de printar e calcular, pois é uma boa prática que cada For seja responsável por uma ação.
         System.out.println("\nIMPOSTOS PAGOS:");
         for (TaxaPorPessoa lista : listaDePessoa) {
             System.out.printf("%s: $ %.2f\n", lista.getNome(), lista.total());
+        }
+        double totalImposto = 0.0;
+        for (TaxaPorPessoa lista : listaDePessoa) {
             totalImposto += lista.total();
         }
         System.out.printf("\nTOTAL DE IMPOSTOS: $ %.2f", totalImposto);
