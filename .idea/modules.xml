@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/exemplo_classes_e_metodos/exemplo_classes_e_metodos.iml" filepath="$PROJECT_DIR$/exemplo_classes_e_metodos/exemplo_classes_e_metodos.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio_class_cadastro_de_produto/exercicio_class_cadastro_de_produto.iml" filepath="$PROJECT_DIR$/exercicio_class_cadastro_de_produto/exercicio_class_cadastro_de_produto.iml" />
       <module fileurl="file://$PROJECT_DIR$/heranca/heranca.iml" filepath="$PROJECT_DIR$/heranca/heranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atividades_assimilacao/herancaPolimorfismo/herancaPolimorfismo.iml" filepath="$PROJECT_DIR$/atividades_assimilacao/herancaPolimorfismo/herancaPolimorfismo.iml" />
       <module fileurl="file://$PROJECT_DIR$/vetorEMatrix/vetorEMatrix.iml" filepath="$PROJECT_DIR$/vetorEMatrix/vetorEMatrix.iml" />
     </modules>
   </component>
