@@ -29,11 +29,4 @@ public abstract class TaxaPorPessoa {
     }
 
     public abstract double total();
-
-    public Double totalImposto() {
-        double somaTotal = 0.0;
-        somaTotal += total();
-
-        return somaTotal;
-    }
 }
