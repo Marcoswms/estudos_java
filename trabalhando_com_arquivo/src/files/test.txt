@@ -1,0 +1,2 @@
+Primeiro teste direto com arquivos
+Testando esta nova funcionalidade em java
