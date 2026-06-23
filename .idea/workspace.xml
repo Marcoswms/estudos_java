@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4dc90fb8-c67a-43da-88ca-5a639a205486" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trabalhando_com_arquivo/src/files/create-text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trabalhando_com_arquivo/src/files/create-text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trabalhando_com_arquivo/application/ManipularPastascomFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trabalhando_com_arquivo/application/ManipularPastascomFile.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
     "Application.ExemploTryWithResource.executor": "Run",
     "Application.FibonacciF1151.executor": "Run",
     "Application.FileWriterBufferedWriter.executor": "Run",
+    "Application.InfoDoCaminhoDoArquivo.executor": "Run",
     "Application.Lanche1038.executor": "Debug",
     "Application.Main.executor": "Run",
     "Application.MainTest.executor": "Run",
@@ -85,7 +86,7 @@
       <recent name="application" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManipularPastascomFile">
+  <component name="RunManager" selected="Application.InfoDoCaminhoDoArquivo">
     <configuration name="Exemplo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="application.Exemplo01" />
       <module name="trabalhando_com_arquivo" />
@@ -125,6 +126,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InfoDoCaminhoDoArquivo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.InfoDoCaminhoDoArquivo" />
+      <module name="trabalhando_com_arquivo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ManipularPastascomFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="application.ManipularPastascomFile" />
       <module name="trabalhando_com_arquivo" />
@@ -138,26 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="application.Program (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="application.Program" />
-      <module name="trabalhando_com_arquivo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InfoDoCaminhoDoArquivo" />
         <item itemvalue="Application.ManipularPastascomFile" />
         <item itemvalue="Application.FileWriterBufferedWriter" />
         <item itemvalue="Application.ExemploTryWithResource" />
         <item itemvalue="Application.Exemplo01" />
-        <item itemvalue="Application.application.Program (1)" />
       </list>
     </recent_temporary>
   </component>
