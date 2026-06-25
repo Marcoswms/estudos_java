@@ -1,33 +1,57 @@
 /* Fazer um programa para ler o caminhode um arquivo .csv contendo os dados de itens vendidos.
    - Cada item possui um nome,preço unitário e quantidade, separados por vírgula.
    - Você deve gerar um novo arquivo chamado "summary.csv", localizado em uma subpasta chamada "out" a partir
-      da pasta original do arquivo de origem, contendo apenas o nome e o valor total para aquele item (preço unitário
-      multiplicado pela quantidade).
+da pasta original do arquivo de origem, contendo apenas o nome e o valor total para aquele item (preço unitário
+multiplicado pela quantidade).
 
-      split(); separar strings ou palavras
- */
-
+ * Dica: split() - separar strings ou palavras */
 package application;
 
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String path = ("C:\\Users\\Marcos\\Documents\\IntelliJ_Projetos\\Exercicios_Java\\atividades_assimilacao\\manipulacao_de_arquivos_file\\src\\files\\produtos.csv");
+        Scanner scan = new Scanner(System.in);
 
-        try (BufferedReader br = new BufferedReader(new FileReader(path));) {
-            System.out.println("Lendo os dados do arquivo: ");
-            String leitorDaLinha = br.readLine();
+        System.out.println("Informe o caminho do arquivo: ");
+        String caminho = scan.nextLine();
 
-            while (leitorDaLinha != null) {
-                System.out.println(leitorDaLinha);
-                leitorDaLinha = br.readLine();
-            }
-        } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+        File diretorio = new File(caminho);
+        String pegaDiretorios = diretorio.getParent();
+
+        boolean sucesso = new File(pegaDiretorios + "\\out").mkdir();
+        if (sucesso != true) {
+            System.out.println("Não foi possível criar um novo diretório.");
+            System.exit(0);
         }
+        diretorio = new File(pegaDiretorios + "\\out");
+        System.out.println("Diretório 'out' criado com sucesso.");
 
+        try (BufferedReader br = new BufferedReader(new FileReader(caminho));) {
+            String linha = br.readLine();
+
+            while (linha != null) {
+                String[] guardaDados = linha.split(",");
+                String pegaProduto = guardaDados[0];
+                double pegaPreco = Double.parseDouble(guardaDados[1]);
+                int pegaQuantidade = Integer.parseInt(guardaDados[2]);
+                double totalPreco = pegaQuantidade * pegaPreco;
+                String[] pegaProdTotal = new String[]{pegaProduto + "," + Double.toString(totalPreco)};
+
+                try (BufferedWriter bw = new BufferedWriter(new FileWriter(diretorio + "\\summary.csv", true))) {
+                    bw.write(Arrays.toString(pegaProdTotal));
+                    bw.newLine();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                linha = br.readLine();
+            }
+            System.out.println("Arquivo 'summary.csv' criado com sucesso.");
+            scan.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc90fb8-c67a-43da-88ca-5a639a205486" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atividades_assimilacao/manipulacao_de_arquivos_file/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/atividades_assimilacao/manipulacao_de_arquivos_file/src/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/manipulacao_de_arquivos_file/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/manipulacao_de_arquivos_file/application/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     "Application.Lanche1038.executor": "Debug",
     "Application.Main.executor": "Run",
     "Application.MainTest.executor": "Run",
-    "Application.ManipularPastascomFile.executor": "Run",
+    "Application.ManipularPastascomFile.executor": "Debug",
     "Application.Program.executor": "Run",
     "Application.ProgramMain.executor": "Run",
     "Application.Programa.executor": "Run",
@@ -155,9 +156,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ManipularPastascomFile" />
         <item itemvalue="Application.ExemploTryWithResource" />
         <item itemvalue="Application.InfoDoCaminhoDoArquivo" />
-        <item itemvalue="Application.ManipularPastascomFile" />
         <item itemvalue="Application.FileWriterBufferedWriter" />
       </list>
     </recent_temporary>
@@ -185,6 +186,11 @@
           <url>file://$PROJECT_DIR$/atividades_assimilacao/cafeteria_ideia/src/appication/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/trabalhando_com_arquivo/src/application/ManipularPastascomFile.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
